@@ -3,9 +3,9 @@ from google.oauth2 import service_account
 import mysql.connector
 
 
-SERVICE_ACCOUNT_FILE = 'sync-435618-962845203da8.json'
+SERVICE_ACCOUNT_FILE = 'json-file'
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
-SPREADSHEET_ID = '13eGjIe-Pq7aGGd_2gqeIp68CujiIGrm0hy7VymYzLOw'
+SPREADSHEET_ID = ' '
 RANGE = 'Sheet1!A1:D100'
 
 credentials = service_account.Credentials.from_service_account_file(
@@ -16,7 +16,7 @@ service = build('sheets', 'v4', credentials=credentials)
 db = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="sendhelp",
+    password="",
     database="sync"
 )
 cursor = db.cursor()
