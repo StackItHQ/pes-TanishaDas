@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/AHFn7Vbn)
 # Superjoin Hiring Assignment
 
 ### Welcome to Superjoin's hiring assignment! 🚀
@@ -59,3 +60,31 @@ All the best ✨.
 
 ## Developer's Section
 *Add your video here, and your approach to the problem (optional). Leave some comments for us here if you want, we will be reading this :)*
+
+### To Run the code
+
+
+
+Step 1: Set Up Google Sheets API
+Create Google Cloud Project:
+
+Go to Google Cloud Console.
+Create a new project and enable the Google Sheets API and Google Drive API.
+Set Up OAuth Credentials:
+
+Go to APIs & Services > Credentials > Create Credentials > OAuth 2.0 Client IDs.
+Download the credentials (JSON file) and store it in your project directory.
+
+Step 2: pip install -r requirements.txt
+
+Step3: Set Up Google Sheets API Client:
+Add the Google Sheets API integration in the Python script to send data from the database to Google Sheets.
+
+Step 4: Make a database, and create tables(in this case 3 columns)
+
+Step 5: insert values into the table
+
+Step 6: now run the file sync_db.py---> this syncs the data from DB to SHEET
+
+You can also add records to sheets, and run sync_sheets.py-> this syncs the data from excel sheet to mysql database.
+
